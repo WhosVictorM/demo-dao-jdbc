@@ -34,11 +34,16 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		System.out.println("\n=== TEST 3: Seller insert() ===");
+		System.out.println("\n=== TEST 4: Seller insert() ===");
 		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", sdf.parse("04/06/2003"), 4000.00, department);
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		
+		System.out.println("\n=== TEST 5: Seller update() ===");
+		sell = sellerDao.findById(1);
+		sell.setName("Martha Waine");
+		sellerDao.update(sell);
+		System.out.println("Update completed!");
 		
 		
 		
