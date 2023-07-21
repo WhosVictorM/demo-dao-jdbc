@@ -14,8 +14,7 @@ public class Program {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-	
-		
+		System.out.println("=== TEST 1: Seller findById() ===");
 		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
